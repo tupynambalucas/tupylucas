@@ -1,0 +1,156 @@
+*{margin: 0px;}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.montserrat-regular{
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-thin{
+    font-family: montserrat,sans-serif;
+    font-weight: 100;
+    font-style: normal;  
+}
+.montserrat-light{
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.montserrat-medium{
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.montserrat-bold{
+    font-family: montserrat,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Sections */
+.sec-1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #0f0f0f;
+}
+.sec-2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #E6E6FA; 
+}
+
+/* Sec 1 */
+.sec-1 img{
+    position: absolute;
+    width: 70vw;
+    bottom: 1.5vh;
+    z-index: 10;
+    right: -5vw;
+}
+.container-bem-vindo{
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    background: #800080;
+    height: 75vh;
+    width: 30vw;
+    border-radius: 0.5vw;
+}
+.container-texto{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec-1 #titulo{
+    position: relative;
+    color: #E6E6FA;
+    font-size: 7vh;
+}
+.sec-1 #paragrafo{
+    position: relative;
+    color: #E6E6FA;
+    width: 20vw;
+    margin-top: 3vh;
+    font-size: 3vh;
+    text-shadow: 0px 5px 4px rgba(150, 150, 150, 1);
+}
+.waves {
+    position:absolute;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:20vh;
+    max-height:40vh;
+    bottom: 0px;
+    z-index: 14;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
