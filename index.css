@@ -29,6 +29,36 @@ body,html{
     font-weight: 700;
     font-style: normal;
 }
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  height: 6vh;
+  width: 100vw;
+  background: white;
+  z-index: 40;
+  -webkit-box-shadow: 0px 3px 20px -8px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 3px 20px -8px rgba(0,0,0,0.23);
+  box-shadow: 0px 3px 20px -8px rgba(0,0,0,0.23);
+}
+.navbar h1{
+  position: absolute;
+  font-size: 2vh;
+  color: #800080;
+  top: 2vh;
+  left: 15vw;
+}
+.nav{
+  position: absolute;
+  display: flex;
+  top: 2vh;
+  right: 6vw;
+}
+.nav p{
+  font-size: 2vh;
+  margin-left: 1vw;
+  color: #800080;
+}
 
 /* Sections */
 .sec-1{
@@ -39,50 +69,41 @@ body,html{
 }
 .sec-2{
     position: relative;
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
     background: #E6E6FA; 
+}
+.sec-3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: white; 
 }
 
 /* Sec 1 */
 .sec-1 img{
     position: absolute;
-    width: 70vw;
+    width: 65vw;
     bottom: 1.5vh;
     z-index: 10;
-    right: -5vw;
+    right: 0;
 }
-.container-bem-vindo{
-    position: absolute;
-    top: 25vh;
-    left: 15vw;
-    background: #800080;
-    height: 75vh;
-    width: 30vw;
-    border-radius: 0.5vw;
-}
+
 .container-texto{
     position: absolute;
-    top: 20vh;
-    left: 50%;
+    top: 35vh;
+    left: 15vw;
     transform: translate(-50%, -50%);
-}
-.sec-1 #titulo{
-    position: relative;
-    color: #E6E6FA;
-    font-size: 7vh;
 }
 .sec-1 #paragrafo{
     position: relative;
     color: #E6E6FA;
     width: 20vw;
-    margin-top: 3vh;
-    font-size: 3vh;
-    text-shadow: 0px 5px 4px rgba(150, 150, 150, 1);
+    font-size: 3.5vh;
 }
 .waves {
     position:absolute;
-    width: 100%;
+    width: 100vw;
     height:15vh;
     margin-bottom:-7px; /*Fix for safari gap*/
     min-height:20vh;
@@ -91,15 +112,7 @@ body,html{
     z-index: 14;
   }
   
-  .content {
-    position:relative;
-    height:20vh;
-    text-align:center;
-    background-color: white;
-  }
-  
   /* Animation */
-  
   .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
   }
@@ -140,8 +153,6 @@ body,html{
       font-size:24px;
     }
   }
-
-
 .floating {  
     animation-name: floating;
     animation-duration: 5s;
@@ -154,3 +165,71 @@ body,html{
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }
+
+/* Section 2 */
+.sobre-mim{
+  position: absolute;
+  top: 10vh;
+  right: 30vw;
+  width: 40vw;
+  height: 30vh;
+}
+.sobre-mim h1{
+  font-size: 5vh;
+  color: purple;
+}
+.sobre-mim p{
+  margin-top: 2vh;
+  font-size: 3vh;
+  color: #0f0f0f;
+}
+.quadro{
+  position: absolute;
+  background-image: url(img/tonominemae.png);
+  background-position: left;
+  background-size: cover;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  top: 10vh;
+  right: 15vw;
+  -webkit-box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+  box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+}
+
+.icon-sec2{
+  color: purple;
+  font-size: 7vh;
+}
+.i-1{
+  position: absolute;
+  top: 10vh;
+  left: 6vw;
+}
+.i-2{
+  position: absolute;
+  top: 35vh;
+  right: 12vw;
+}
+.i-3{
+  position: absolute;
+  top: 5vh;
+  left: 14vw;
+}
+.i-4{
+  position: absolute;
+  top: 15vh;
+  right: 19vw;
+}
+.i-5{
+  position: absolute;
+  top: 20vh;
+  left: 23vw;
+}
+.i-6{
+  position: absolute;
+  top: 30vh;
+  right: 25vw;
+}
+

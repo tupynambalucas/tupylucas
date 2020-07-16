@@ -8,17 +8,27 @@
     <!-- Fontes -->
     <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
     <!-- Js -->
+    <script src="lib/rellax.min.js"></script>
+    <script src="lib/aos.js"></script>
+    <script defer src="lib/all.js"></script>
     <!-- Css -->
     <link rel="stylesheet" href="index.css">
+    <link href="lib/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <nav class="navbar"></nav>
+    <nav id="navbar" class="navbar">
+        <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+        <div class="nav">
+            <p class="montserrat-regular">Home</p>
+            <p class="montserrat-regular">Projetos</p>
+            <p class="montserrat-regular">Contato</p>
+            <p class="montserrat-regular">Preços</p>
+        </div>
+    </nav>
     <section class="sec-1">
-        <div class="container-bem-vindo">
-            <div class="container-texto">
-                <h1 id="titulo" class="montserrat-bold">Tupynambá<br/>Lucas</h1>
-                <p id="paragrafo" class="montserrat-regular">Desenvolvedor full stack de sites, aplicações web, mobile e desktop.</p>
-            </div>
+        <div class="container-texto" data-rellax-speed="-4">
+            <p id="paragrafo" class="montserrat-regular"><span style="color: purple;">Desenvolvedor full stack.</span> Criação de sites, aplicações web, mobile e desktop.</p>
         </div>
         <img class="floating" src="img/her-flipped.png" alt="">
         <!--Waves Container-->
@@ -38,8 +48,52 @@
         </div>
     <!--Waves end-->
     </section>
-    <section class="sec-2"></section>
-    <section class="sec-3"></section>
+    <!-- Sec 2 -->
+    <section class="sec-2">
+        <div class="i-1" data-rellax-speed="-1">
+            <i class="fab fa-html5 icon-sec2"></i>
+        </div>
+        <div class="i-2" data-rellax-speed="2">
+            <i class="fab fa-css3-alt icon-sec2"></i>
+        </div>
+        <div class="i-3" data-rellax-speed="-2">
+            <i class="fab fa-js-square icon-sec2"></i>
+        </div>
+        <div class="i-4" data-rellax-speed="-2">
+            <i class="fas fa-code icon-sec2"></i>
+        </div>
+        <div class="i-5" data-rellax-speed="1">
+            <i class="fas fa-shield-alt icon-sec2"></i>
+        </div>
+        <div class="i-6" data-rellax-speed="2">
+            <i class="fas fa-server icon-sec2"></i>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="sobre-mim">
+            <h1 class="montserrat-bold">Sobre mim</h1>
+            <p class="montserrat-regular">Olá, meu nome é <span style="color: purple;">Tupynambá Lucas</span> e sou um desenvolvedor full stack. Formado em T.I no SENAI/CTAI no ano de 2019. Amo criar lindas páginas web com HTML5, CSS3 & JavaScript. Outras das minhas habilidades são: Criação de aplicações web, mobile e desktop, criação de banco de dados e servidor, entre outras <span>capacidades</span> listadas na seção abaixo.</p>
+        </div>
+    </section>
+    <!-- Sec 3 -->
+    <section class="sec-3">
+        <h1>Competencias</h1>
+        <div class="container-flex">
+            <div flex-box-1>
+                <div class="item">
+                    <img src="">
+                    <p></p>
+                </div>
+            </div>
+            <div flex-box-2>
+    
+            </div>
+            <div flex-box-3>
+    
+            </div>
+        </div>
+    </section>
     <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
