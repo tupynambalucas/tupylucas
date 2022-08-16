@@ -7,30 +7,71 @@
     <title>Tupynambá Lucas</title>
     <!-- Fontes -->
     <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Js -->
     <script src="./lib/rellax.min.js"></script>
     <script src="./lib/aos.js"></script>
     <script defer src="./lib/all.js"></script>
+
     <!-- Css -->
     <link rel="stylesheet" href="./index.css">
     <link href="./lib/aos.css" rel="stylesheet">
 
+    <!-- PIXI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.1/browser/pixi.js" integrity="sha512-/Q7zw+BYCs3qyb7ZTzoZn9DB63zuDMGaQjz3BV6Ug6cbtY2cLFon1/rgP4SadB8zFx6yseAymKymn+McinbwJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- MidnightJs -->
+    <script src="lib/midnight.jquery.min.js"></script>
+    <script>
+        // Start midnight
+        $(document).ready(function(){
+          // Change this to the correct selector.
+          $('header.fixed').midnight();
+        });
+    </script>
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="lib/animate.js"></script>
+
 </head>
 <body>
-    <nav id="navbar" class="navbar">
-        <h1 class="montserrat-bold">Tupynambá Lucas</h1>
-        <div class="nav">
-            <p class="montserrat-regular">Home</p>
-            <p class="montserrat-regular">Projetos</p>
-            <p class="montserrat-regular">Contato</p>
-            <p class="montserrat-regular">Preços</p>
+    <header id="fixed" class="fixed">
+        <div class="midnightHeader verde">
+            <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+            <div class="nav">
+                <a href="" class="montserrat-regular">Home</a>
+                <a href="" class="montserrat-regular">Projetos</a>
+                <a href="" class="montserrat-regular">Contato</a>
+                <a href="" class="montserrat-regular">Preços</a>
+            </div>
         </div>
-    </nav>
+        <div class="midnightHeader default">
+            <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+            <div class="nav">
+                <a href="" class="montserrat-regular">Home</a>
+                <a href="" class="montserrat-regular">Projetos</a>
+                <a href="" class="montserrat-regular">Contato</a>
+                <a href="" class="montserrat-regular">Preços</a>
+            </div>
+        </div>
+    </header>
+    <!-- <section class="land">
+        <h1 class="criatividade kobe-regular floating">Criatividade <br> fora de órbita</h1>
+        <div class="lua" id="lua"></div>
+        <div class="background-land"></div>
+    </section> -->
     <section class="sec-1">
         <div class="container-texto" data-rellax-speed="-4">
-            <p id="paragrafo" class="montserrat-regular"><span style="color: purple;">Desenvolvedor full stack.</span> Criação de sites, aplicações web, mobile e desktop.</p>
+            <p id="paragrafo" class="montserrat-regular"><span style="color: #B373AA;">Desenvolvedor full stack.</span> Criação de sites, aplicações web, mobile e desktop.</p>
         </div>
-        <img class="floating" src="img/her-flipped.png" alt="">
+        <img class="floating" src="img/her.png" alt="">
         <!--Waves Container-->
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -39,13 +80,14 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-            <use style="opacity: 0.4;" xlink:href="#gentle-wave" x="48" y="0" fill="#E6E6FA" />
-            <use style="opacity: 0.8;" xlink:href="#gentle-wave" x="48" y="3" fill="#E6E6FA" />
-            <use style="opacity: 0.5;" xlink:href="#gentle-wave" x="48" y="5" fill="#E6E6FA" />
-            <use style="opacity: 1;" xlink:href="#gentle-wave" x="48" y="7" fill="#E6E6FA" />
+            <use style="opacity: 0.4;" xlink:href="#gentle-wave" x="48" y="0" fill="0f0f0f" />
+            <use style="opacity: 0.8;" xlink:href="#gentle-wave" x="48" y="3" fill="0f0f0f" />
+            <use style="opacity: 0.5;" xlink:href="#gentle-wave" x="48" y="5" fill="0f0f0f" />
+            <use style="opacity: 1;" xlink:href="#gentle-wave" x="48" y="7" fill="0f0f0f" />
             </g>
             </svg>
         </div>
+        
     <!--Waves end-->
     </section>
     <!-- Sec 2 -->
@@ -70,12 +112,80 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" class="sobre-mim">
             <h1 class="montserrat-bold">Sobre mim</h1>
-            <p class="montserrat-regular">Olá, meu nome é <span style="color: purple;">Tupynambá Lucas</span> e sou um desenvolvedor full stack. Formado em T.I no SENAI/CTAI no ano de 2019. Amo criar lindas páginas web com HTML5, CSS3 & JavaScript. Outras das minhas habilidades são: Criação de aplicações web, mobile e desktop, criação de banco de dados e servidor, entre outras <span>capacidades</span> listadas na seção abaixo.</p>
+            <p class="montserrat-regular">Meu nome é <span style="color: #B373AA;">Tupynambá Lucas</span> e sou um desenvolvedor full stack. Formado em T.I no SENAI/CTAI no ano de 2019. Amo criar lindas páginas web com HTML5, CSS3 & JavaScript. Outras das minhas habilidades são: Criação de aplicações web, mobile e desktop, criação de banco de dados e servidor, entre outras <span>capacidades</span> listadas na seção abaixo.</p>
         </div>
     </section>
     <!-- Sec 3 -->
-    <section class="sec-3">
-        <h1>Competencias</h1>
+    <section class="sec-3" data-midnight="verde">
+        <div class="servicos">
+            <h1 class="servicos-titulo montserrat-bold" data-rellax-speed="1">Faça comigo os melhores</h1>
+            <div class="flex-servico">
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" class="conteudo-servico">
+                    <div class="servico">
+                        <i class="fa-regular fa-pager"></i>
+                        <h1 class="montserrat-bold">Sites</h1>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" class="conteudo-servico">
+                    <div class="servico">
+                        <i style="margin-left: 0.4vw;" class="fa-solid fa-mobile-button"></i>
+                        <h1 class="montserrat-bold">Aplicativos</h1>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" class="conteudo-servico">
+                    <div class="servico">
+                        <i class="fa-solid fa-robot"></i>
+                        <h1 class="montserrat-bold">Bots</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="servico-pixi" class="servico-pixi"> -->
+            <div class="habilidades">
+                <div class="habilidades-flex">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
+                        <img src="img/habilidades/cloud.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
+                        <img src="img/habilidades/css.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
+                        <img src="img/habilidades/express.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
+                        <img src="img/habilidades/html.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                        <img src="img/habilidades/javascript.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="habilidade">
+                        <img src="img/habilidades/kube.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="habilidade">
+                        <img src="img/habilidades/mongo.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="habilidade">
+                        <img src="img/habilidades/node.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="habilidade">
+                        <img src="img/habilidades/pip.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="habilidade">
+                        <img src="img/habilidades/react.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100" class="habilidade">
+                        <img src="img/habilidades/web3.png" alt="">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="amy" class="amy">
+            <div class="amy-conteudo">
+                <h1 class="montserrat-regular">three.js</h1>
+                <p class="montserrat-bold">Crio belas experiências 3D na WEB com threeJs</p>
+            </div>
+        </div>
+        <!-- <h1>Competencias</h1>
         <div class="container-flex">
             <div flex-box-1>
                 <div class="item">
@@ -88,12 +198,15 @@
             </div>
             <div flex-box-3>
     
-            </div>
-        </div>
+           </div> -->
     </section>
+    <script src="js/servico-pixi.js"></script>
     <script src="index.js"></script>
+    <script src="js/nico-nico.js" type="module"></script>
+    <!-- <script type="module" src="js/lua.js"></script> -->
     <script>
         AOS.init();
     </script>
+
 </body>
 </html>
