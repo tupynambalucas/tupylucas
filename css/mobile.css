@@ -1,0 +1,493 @@
+@media screen and (max-width: 600px) {
+    #amy{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background: rgb(24,222,133);
+        background: linear-gradient(90deg, rgba(24,222,133,1) 0%, rgba(9,121,92,1) 30%, rgba(0,255,244,1) 100%);
+        -webkit-box-shadow: 0px 0px 39px 22px rgba(0,0,0,1); 
+        box-shadow: 0px 0px 39px 22px rgba(0,0,0,1);
+        z-index: 10000!important;
+        overflow: hidden;
+      }
+      #amy canvas{
+        height: 100vh!important;
+        width: 100vw!important;
+        position: absolute;
+      }
+      .amy-conteudo{
+        position: absolute!important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        top: 30vw;
+        right: 15vw;
+        z-index: 10000!important;
+      }
+      .amy-conteudo h1{
+        font-size: 7vh;
+        color: lightgreen;
+      }
+      .amy-conteudo p{
+        width: 70vw!important;
+        font-size: 2vh;
+        color: #0f0f0f;
+        width: 25vw;
+      }
+      /* Navbar */
+      nav{
+        position: fixed;
+        z-index: 1000000000;
+        height: 8vh!important;
+        width: 100vw!important;
+      
+      }
+      .midnightHeader.default {
+        color: #BD1DCF;
+        background: #0f0f0f;
+      }
+      
+      .midnightHeader.verde {
+        background: #E4E4E4;
+        color: green;
+      }
+      .midnightHeader.verde a{
+        color: lightgreen;
+      }
+      
+      
+      .nav{
+        position: relative;
+        display: flex;
+        top: 2vh;
+        right: 5vw;
+        float: right;
+      }
+      .fixed h1{
+        position: absolute;
+        font-size: 2vh;
+        top: 2.5vh;
+        left: 5vw;
+      }
+      .nav a{
+        font-size: 1.5vh;
+        margin-left: 1vw;
+        margin-top: 1vh;
+        outline: none;
+        text-decoration: none;
+      }
+      
+      
+      /* Sections */
+      .sec-1{
+          position: relative;
+          height: 100vh;
+          width: 100vw;
+          background: #E4E4E4;
+          overflow: hidden;
+      }
+      .sec-2{
+          position: relative;
+          height: 50vh;
+          width: 100vw;
+          background: black;
+          /* background: rgb(0,0,0);
+          background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(128,0,128,1) 100%); */
+      }
+      .sec-3{
+        position: relative;
+        height: auto;
+        width: 100vw;
+      }
+      
+      /* Sec 1 */
+      .sec-1 img{
+          position: absolute;
+          height: 50vh;
+          width: auto;
+          bottom: 1vh;
+          z-index: 10;
+          left: -50vw;
+          /* -webkit-transform: scaleX(-1);
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          transform: scaleX(-1); */
+      }
+      
+      .container-texto{
+          position: absolute;
+          top: 30vh!important;
+          left: 12.5vw;
+      }
+      .sec-1 #paragrafo{
+          position: relative;
+          color: #0f0f0f;
+          width: 80vw;
+          font-size: 3vh;
+      }
+      .waves {
+          position:absolute;
+          width: 100vw;
+          height:15vh;
+          margin-bottom:-7px; /*Fix for safari gap*/
+          min-height:20vh;
+          max-height:40vh;
+          bottom: 0px;
+          z-index: 14;
+        }
+        
+        /* Animation */
+        .parallax > use {
+          animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+        }
+        .parallax > use:nth-child(1) {
+          animation-delay: -2s;
+          animation-duration: 7s;
+        }
+        .parallax > use:nth-child(2) {
+          animation-delay: -3s;
+          animation-duration: 10s;
+        }
+        .parallax > use:nth-child(3) {
+          animation-delay: -4s;
+          animation-duration: 13s;
+        }
+        .parallax > use:nth-child(4) {
+          animation-delay: -5s;
+          animation-duration: 20s;
+        }
+        @keyframes move-forever {
+          0% {
+           transform: translate3d(-90px,0,0);
+          }
+          100% { 
+            transform: translate3d(85px,0,0);
+          }
+        }
+        /*Shrinking for mobile*/
+        @media (max-width: 768px) {
+          .waves {
+            height:40px;
+            min-height:40px;
+          }
+          .content {
+            height:30vh;
+          }
+          h1 {
+            font-size:24px;
+          }
+        }
+      .floating {  
+          animation-name: floating;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+      }
+      
+      @keyframes floating {
+          from { transform: translate(0,  0px); }
+          65%  { transform: translate(0, 15px); }
+          to   { transform: translate(0, -0px); }    
+      }
+      
+      /* Section 2 */
+      .sobre-mim{
+        position: absolute;
+        top: 10vh;
+        left: 12.5vw;
+        width: 80vw;
+        height: 50vh;
+      }
+      .sobre-mim h1{
+        font-size: 1.8vh;
+        background: #B373AA;
+        padding: 0.8vh;
+        width: fit-content;
+        color: #E4E4E4;
+      }
+      .sobre-mim p{
+        letter-spacing: 0.1vw;
+        margin-top: 3vh;
+        font-size: 1.8vh;
+        color: snow;
+      }
+      .servicos{
+        position: relative;
+        height: 260vh!important;
+        width: 100vw;
+        background: #0f0f0f;
+        overflow: hidden!important;
+      }
+      .servicos-titulo{
+        position: absolute;
+        left: 14.7vw;
+        top: 42vh;
+        font-size: 6vh;
+        z-index: 100;
+        background: #0ECF68;
+        background: linear-gradient(to right, #0ECF68 0%, #25CFA2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+      
+      }
+      .servico-pixi{
+        position: absolute;
+        height: 140vh!important;
+        width: 100vw!important;
+        background: #BD1DCF;
+      }
+      .servico-pixi canvas{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 140vh!important;
+        width: 100vw!important;
+        z-index: 1;
+        background: #BD1DCF;
+      }
+      .flex-servico{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        z-index: 10000;
+        position: absolute;
+        top: 90vh;
+        left: 53%;
+        height: auto;
+        width: auto;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      .conteudo-servico{
+        position: relative;
+        height: 25vh!important;
+        width: 70vw!important;
+        background: black;
+        margin: 5vh;
+        border-radius: 2vh;
+        border: rgb(24,222,133) solid 1vh;
+        -webkit-box-reflect: below 2vh -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.05)));
+      }
+      .servico{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: rgb(24,222,133);
+        font-size: 4vh;
+      }
+      
+      .competencias{
+        position: relative;
+        z-index: 100000;
+        width: 100vw;
+        background: black;
+        -webkit-box-shadow: 0px 0px 39px 22px rgba(0,0,0,0.50); 
+        box-shadow: 0px 0px 39px 22px rgba(0,0,0,0.50);
+      }
+      .competencias h1{
+        color: #E4E4E4;
+        margin-left: 15vw;
+        font-size: 10vh;
+        background: #BD1DCF;
+        background: linear-gradient(to right, #BD1DCF 0%, #21CFA6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .quadro{
+        position: absolute;
+        background-image: url(img/tonominemae.png);
+        background-position: left;
+        background-size: cover;
+        height: 40vh;
+        width: 40vh;
+        border-radius: 50%;
+        top: 10vh;
+        right: 15vw;
+        -webkit-box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+        box-shadow: 0px 13px 26px -8px rgba(0,0,0,0.3);
+      }
+      
+      .icon-sec2{
+        color: purple;
+        font-size: 4vh;
+        display: none;
+      }
+      .i-1{
+        position: absolute;
+        top: 30vh;
+        right: 5vw;
+      }
+      .i-2{
+        position: absolute;
+        top: 40vh;
+        right: 9vw;
+      }
+      .i-3{
+        position: absolute;
+        top: 30vh;
+        right: 45.5vw;
+      }
+      .i-4{
+        position: absolute;
+        top: 30vh;
+        right: 17.5vw;
+      }
+      .i-5{
+        position: absolute;
+        top: 40vh;
+        right: 30vw;
+      }
+      .i-6{
+        position: absolute;
+        top: 20vh;
+        right: 36vw;
+      }
+      
+      .habilidades{
+        position: relative;
+        top: 150vh;
+        width: 80vw;
+        left: 12.5vw;
+        display: flex;
+        z-index: 100;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .design{
+        position: absolute;
+        top: 210vh;
+        width: 80vw;
+        left: 12.5vw;
+        display: flex;
+        z-index: 100;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .design h1{
+        margin-left: 1vw;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+        z-index: 100;
+        background: #0ECF68;
+        background: linear-gradient(to right, #0ECF68 0%, #25CFA2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .habilidades-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .habilidades h1{
+        margin-left: 1vw;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+        z-index: 100;
+        background: #0ECF68;
+        background: linear-gradient(to right, #0ECF68 0%, #25CFA2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .habilidade{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 2vh;
+
+      }
+      .habilidade p{
+        margin-top:-3vh;
+        text-align: center;
+        color: #E4E4E4;
+        font-size: 1.5vh;
+      }
+      .habilidade img{
+        position: relative;
+        height: 5vh;
+        align-self: center;
+      }
+      
+      /* LUA */
+      
+      .land{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        /* background-image: url("../img/espaco.jpg");
+        background-size: contain; */
+      }
+      .criatividade{
+        opacity: 0.9;
+        z-index: 10000;
+        text-align: left;
+        position: absolute;
+        color: snow;
+        background-color: snow;
+        font-size: 15vh;
+        width: 50vw;
+        top: 20vh;
+        left: 10vw;
+      
+         background-image: linear-gradient(45deg, purple, pink, snow);
+        
+      
+         background-size: 100%;
+         background-repeat: repeat;
+       
+        
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent; 
+         -moz-background-clip: text;
+         -moz-text-fill-color: transparent;
+      }
+      .background-land{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+        background: rgb(15,15,15);
+        background: linear-gradient(180deg, rgba(15,15,15,1) 49%, rgba(128,0,128,1) 72%, rgba(228,228,228,1) 100%);
+       
+      }
+      
+      
+      .lua{
+        position: absolute!important;
+        height: 100vh!important;
+        width: 100vw;
+        z-index: 500;
+      }
+      .lua canvas{
+        position: absolute;
+        height: 100vh!important;
+        width: 100vw!important;
+      }
+
+    .conteudo-servico{
+        height: 30vh;
+        width: 40vw;
+        
+    }
+
+    .container-texto{
+        position: absolute;
+        top: 45vh;
+        right: 30vw;
+        font-size: 2vh;
+        transform: translate(-50%, -50%);
+    }
+    .habilidade{
+        margin-left: 1.5vw;
+    }
+    .habilidade p{
+        margin-top: 0;
+    }
+  }

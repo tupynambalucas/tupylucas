@@ -1,3 +1,4 @@
+"use strict";
 import * as THREE from '../three/build/three.module.js';
 import { GLTFLoader } from '../three/loaders/GLTFLoader.js';
 import { EffectComposer } from '../three/postprocessing/EffectComposer.js';
@@ -117,8 +118,6 @@ loader.load(
 
         // Empurrando objeto para variavel
         let object = gltf.scene
-
-        object.position.set(-300, -350, 150);
         object.scale.set(500,500,500);
         object.name = 'amy';
         object.rotation.y = 0
@@ -139,7 +138,13 @@ loader.load(
    
         } )
     
-
+        if (window.innerWidth < 568) {
+          object.position.set(0, -350, 150);
+          mesh.position.set(0, 0, 0);
+          renderer.setPixelRatio( window.devicePixelRatio *  0.4);
+        } else {
+          object.position.set(-300, -350, 150);
+        }
 
         // Futura att
 
@@ -204,21 +209,12 @@ setTimeout(function(){
 }, 30000); 
 // Função que anima a mesh
 
+
 function animate() {
     requestAnimationFrame( animate );
     const delta = clock.getDelta();
     if (mixer) mixer.update( delta );
-    if (action.time==2.0) {
-        console.log("APARECER")
-        element.style.display = 'block'
-        animateCSS("#amy", 'fadeIn')
-    }
-    if (action.time==10.0) {
-        console.log("SUMIR")
-        animateCSS("#amy", 'fadeOut').then(() => {
-            element.style.display = 'none'
-        })
-    }
+  
     mesh.rotation.y -= 0.005;
     // console.log(animationTime)
     renderer.render( scene, camera );

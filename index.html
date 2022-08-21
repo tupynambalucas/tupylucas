@@ -15,24 +15,23 @@
     <script src="./lib/rellax.min.js"></script>
     <script src="./lib/aos.js"></script>
     <script defer src="./lib/all.js"></script>
+    <script src="js/nico-nico.js" type="module"></script>
 
     <!-- Css -->
     <link rel="stylesheet" href="./index.css">
     <link href="./lib/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mobile.css">
 
     <!-- PIXI -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.1/browser/pixi.js" integrity="sha512-/Q7zw+BYCs3qyb7ZTzoZn9DB63zuDMGaQjz3BV6Ug6cbtY2cLFon1/rgP4SadB8zFx6yseAymKymn+McinbwJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <!-- MidnightJs -->
-    <script src="lib/midnight.jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
     <script>
         // Start midnight
         $(document).ready(function(){
           // Change this to the correct selector.
-          $('header.fixed').midnight();
+          $('nav.fixed').midnight();
         });
     </script>
     
@@ -42,11 +41,10 @@
 
 </head>
 <body>
-    <header id="fixed" class="fixed">
+    <nav class="fixed">
         <div class="midnightHeader verde">
             <h1 class="montserrat-bold">Tupynambá Lucas</h1>
             <div class="nav">
-                <a href="" class="montserrat-regular">Home</a>
                 <a href="" class="montserrat-regular">Projetos</a>
                 <a href="" class="montserrat-regular">Contato</a>
                 <a href="" class="montserrat-regular">Preços</a>
@@ -55,13 +53,13 @@
         <div class="midnightHeader default">
             <h1 class="montserrat-bold">Tupynambá Lucas</h1>
             <div class="nav">
-                <a href="" class="montserrat-regular">Home</a>
+                <!-- <a href="" class="montserrat-regular">Home</a> -->
                 <a href="" class="montserrat-regular">Projetos</a>
                 <a href="" class="montserrat-regular">Contato</a>
                 <a href="" class="montserrat-regular">Preços</a>
             </div>
         </div>
-    </header>
+    </nav>
     <!-- <section class="land">
         <h1 class="criatividade kobe-regular floating">Criatividade <br> fora de órbita</h1>
         <div class="lua" id="lua"></div>
@@ -80,7 +78,7 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-            <use style="opacity: 0.4;" xlink:href="#gentle-wave" x="48" y="0" fill="0f0f0f" />
+            <use style="opacity: 0.4;" xlink:href="#gentle-wave" x="48" y="0" fill="#BD1DCF" />
             <use style="opacity: 0.8;" xlink:href="#gentle-wave" x="48" y="3" fill="0f0f0f" />
             <use style="opacity: 0.5;" xlink:href="#gentle-wave" x="48" y="5" fill="0f0f0f" />
             <use style="opacity: 1;" xlink:href="#gentle-wave" x="48" y="7" fill="0f0f0f" />
@@ -120,19 +118,19 @@
         <div class="servicos">
             <h1 class="servicos-titulo montserrat-bold" data-rellax-speed="1">Faça comigo os melhores</h1>
             <div class="flex-servico">
-                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" class="conteudo-servico">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="conteudo-servico">
                     <div class="servico">
                         <i class="fa-regular fa-pager"></i>
                         <h1 class="montserrat-bold">Sites</h1>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" class="conteudo-servico">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="conteudo-servico">
                     <div class="servico">
                         <i style="margin-left: 0.4vw;" class="fa-solid fa-mobile-button"></i>
                         <h1 class="montserrat-bold">Aplicativos</h1>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" class="conteudo-servico">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="conteudo-servico">
                     <div class="servico">
                         <i class="fa-solid fa-robot"></i>
                         <h1 class="montserrat-bold">Bots</h1>
@@ -141,44 +139,87 @@
             </div>
             <!-- <div id="servico-pixi" class="servico-pixi"> -->
             <div class="habilidades">
+                <h1 class="montserrat-bold">Desenvolvimento</h1>
                 <div class="habilidades-flex">
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
                         <img src="img/habilidades/cloud.png" alt="">
+                        <p>Google Cloud</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
                         <img src="img/habilidades/css.png" alt="">
+                        <p>CSS</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
                         <img src="img/habilidades/express.png" alt="">
+                        <p>Express</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
                         <img src="img/habilidades/html.png" alt="">
+                        <p>HTML</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
                         <img src="img/habilidades/javascript.png" alt="">
+                        <p class="montserrat-regular">Javascript</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="habilidade">
                         <img src="img/habilidades/kube.png" alt="">
+                        <p class="montserrat-regular">Kubernetes</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="habilidade">
                         <img src="img/habilidades/mongo.png" alt="">
+                        <p class="montserrat-regular">MongoDB</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="habilidade">
                         <img src="img/habilidades/node.png" alt="">
+                        <p class="montserrat-regular">NodeJs</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="habilidade">
                         <img src="img/habilidades/pip.png" alt="">
+                        <p class="montserrat-regular">Python</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="habilidade">
                         <img src="img/habilidades/react.png" alt="">
+                        <p class="montserrat-regular">React</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100" class="habilidade">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100" class="habilidade">
                         <img src="img/habilidades/web3.png" alt="">
+                        <p class="montserrat-regular">Web3</p>
                     </div>
                 </div>
                 </div>
             </div>
         </div>
+        <div class="design">
+            <h1 class="montserrat-bold">Design</h1>
+            <div class="habilidades-flex">
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
+                    <img src="img/design/ae.png" alt="">
+                    <p class="montserrat-regular">After Effects</p>
+                </div>
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
+                    <img src="img/design/ai.png" alt="">
+                    <p class="montserrat-regular">Illustrator</p>
+                </div>
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
+                    <img src="img/design/dn.png" alt="">
+                    <p class="montserrat-regular">Dimension</p>
+                </div>
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
+                    <img src="img/design/id.png" alt="">
+                    <p class="montserrat-regular">InDesign</p>
+                </div>
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                    <img src="img/design/ps.png" alt="">
+                    <p class="montserrat-regular">Photoshop</p>
+                </div>
+                <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                    <img src="img/design/xd.png" alt="">
+                    <p class="montserrat-regular">Adobe XD</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
         <div id="amy" class="amy">
             <div class="amy-conteudo">
                 <h1 class="montserrat-regular">three.js</h1>
@@ -200,9 +241,8 @@
     
            </div> -->
     </section>
-    <script src="js/servico-pixi.js"></script>
+    <!-- <script src="js/servico-pixi.js"></script> -->
     <script src="index.js"></script>
-    <script src="js/nico-nico.js" type="module"></script>
     <!-- <script type="module" src="js/lua.js"></script> -->
     <script>
         AOS.init();

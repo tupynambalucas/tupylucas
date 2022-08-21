@@ -1,8 +1,8 @@
 *{margin: 0px;}
 
 body,html{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 .montserrat-regular{
     font-family: montserrat,sans-serif;
@@ -41,6 +41,8 @@ body,html{
   z-index: 10000!important;
 }
 #amy canvas{
+  height: 100vh!important;
+  width: 100vw!important;
   position: absolute;
 }
 .amy-conteudo{
@@ -62,12 +64,12 @@ body,html{
   width: 25vw;
 }
 /* Navbar */
-.fixed{
+nav{
   position: fixed;
-  top: 0!important;
   z-index: 1000000000;
   height: 6vh!important;
   width: 100vw!important;
+
 }
 .midnightHeader.default {
   color: #BD1DCF;
@@ -75,19 +77,20 @@ body,html{
 }
 
 .midnightHeader.verde {
-  background: snow;
+  background: #E4E4E4;
   color: green;
 }
 .midnightHeader.verde a{
-  color: green;
+  color: lightgreen;
 }
 
 
 .nav{
-  position: absolute;
+  position: relative;
   display: flex;
   top: 2vh;
   right: 10vw;
+  float: right;
 }
 .fixed h1{
   position: absolute;
@@ -139,15 +142,15 @@ body,html{
 
 .container-texto{
     position: absolute;
-    top: 35vh;
-    right: 15vw;
+    top: 45vh;
+    right: 10vw;
     transform: translate(-50%, -50%);
 }
 .sec-1 #paragrafo{
     position: relative;
     color: #0f0f0f;
-    width: 20vw;
-    font-size: 3.5vh;
+    width: 40vw;
+    font-size: 4vh;
 }
 .waves {
     position:absolute;
@@ -237,7 +240,7 @@ body,html{
 }
 .servicos{
   position: relative;
-  height: 140vh!important;
+  height: 160vh!important;
   width: 100vw;
   background: #0f0f0f;
 }
@@ -273,7 +276,7 @@ body,html{
   position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   z-index: 10000;
   position: absolute;
   top: 50vh;
@@ -380,13 +383,50 @@ body,html{
   flex-direction: column;
   flex-wrap: nowrap;
 }
+.design{
+  position: absolute;
+  top: 130vh;
+  width: 75vw;
+  left: 12.5vw;
+  display: flex;
+  z-index: 100;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.design h1{
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+  font-size: 3vh;
+  z-index: 100;
+  background: #0ECF68;
+  background: linear-gradient(to right, #0ECF68 0%, #25CFA2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .habilidades-flex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.habilidades h1{
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+  font-size: 3vh;
+  z-index: 100;
+  background: #0ECF68;
+  background: linear-gradient(to right, #0ECF68 0%, #25CFA2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+
+.habilidade p{
+  margin-top:-3vh;
+  text-align: center;
+  color: #E4E4E4;
+  font-size: 1.5vh;
+}
 .habilidade img{
   height: 8vh;
   margin: 2vw;
