@@ -118,7 +118,7 @@ loader.load(
 
         // Empurrando objeto para variavel
         let object = gltf.scene
-        object.scale.set(500,500,500);
+        object.scale.set(100,100,100);
         object.name = 'amy';
         object.rotation.y = 0
         object.castShadow = true
@@ -139,11 +139,11 @@ loader.load(
         } )
     
         if (window.innerWidth < 600) {
-          object.position.set(0, -350, 150);
+          object.position.set(0, 200, 1000);
           mesh.position.set(0, 0, 0);
           renderer.setPixelRatio( window.devicePixelRatio *  0.4);
         } else {
-          object.position.set(-300, -350, 150);
+          object.position.set(-70, 220, 1000);
         }
 
         // Futura att

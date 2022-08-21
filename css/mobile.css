@@ -351,7 +351,7 @@
       .habilidades{
         position: relative;
         top: 150vh;
-        width: 80vw;
+        width: 85vw;
         left: 12.5vw;
         display: flex;
         z-index: 100;
@@ -361,7 +361,7 @@
       .design{
         position: absolute;
         top: 210vh;
-        width: 80vw;
+        width: 85vw;
         left: 12.5vw;
         display: flex;
         z-index: 100;
@@ -382,7 +382,7 @@
       .habilidades-flex{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
       }
       .habilidades h1{
         margin-left: 1vw;
