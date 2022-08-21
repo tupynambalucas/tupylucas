@@ -138,7 +138,7 @@ loader.load(
    
         } )
     
-        if (window.innerWidth < 568) {
+        if (window.innerWidth < 600) {
           object.position.set(0, -350, 150);
           mesh.position.set(0, 0, 0);
           renderer.setPixelRatio( window.devicePixelRatio *  0.4);

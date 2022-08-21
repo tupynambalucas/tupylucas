@@ -221,7 +221,7 @@
       .servicos-titulo{
         position: absolute;
         left: 14.7vw;
-        top: 42vh;
+        top: 30vh;
         font-size: 6vh;
         z-index: 100;
         background: #0ECF68;
@@ -254,7 +254,7 @@
         z-index: 10000;
         position: absolute;
         top: 90vh;
-        left: 53%;
+        left: 51.5%;
         height: auto;
         width: auto;
         margin-right: -50%;
